@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    background-color: #4B515D;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+}
+
+#weather_next_days1,#weather_next_days1,#weather_next_days2,#weather_next_days3,#weather_next_days4,#weather_next_days5{
+    border-radius: 10px;
+}

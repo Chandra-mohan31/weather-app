@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/css/styles.css" >
+<style>
+  
+</style>
+
+    <title>Document</title>
+</head>
+<body style="background-color: #4B515D;">
+    
+      
+
+
+          <div class="container h-100">
+            <div class="d-flex justify-content-center py-5">
+              <select class="dropdown" id="dropdown_locations" onchange="getLatLongOfCityAndWeather()">
+                <option class="dropdown-item">Chennai</option>
+                <option class="dropdown-item">Coimbatore</option>
+                <option class="dropdown-item">Erode</option>
+                <option class="dropdown-item" >Mumbai</option>
+                    <option class="dropdown-item">Delhi</option>
+                    <option class="dropdown-item">Manipur</option>
+
+                    <option class="dropdown-item">Karur</option>
+                    <option class="dropdown-item">Madurai</option>
+                    <option class="dropdown-item">Namakkal</option>
+                    <option class="dropdown-item">Trichy</option>
+              </select>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-md-8 col-lg-6 col-xl-4">
+        
+                <div class="card" style="color: #4B515D; border-radius: 35px;">
+                  <div class="card-body p-4">
+        
+                    <div class="d-flex">
+                      <h6 class="flex-grow-1" id="city">City</h6>
+                      <h6 id="curr_time"></h6>
+                    </div>
+        
+                    <div class="d-flex flex-column text-center mt-5 mb-4">
+                      <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;" id="weather_description"></h6>
+                      <span class="small" style="color: #868B94" id="weather_sub_desc">Stormy</span>
+                    </div>
+        
+                    <div class="d-flex align-items-center">
+                      <div class="flex-grow-1" style="font-size: 1rem;">
+                        <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="wind_speed"> 40 km/h
+                          </span></div>
+                        <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="humidity"> 84% </span>
+                        </div>
+                        <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="temperature">  </span>
+                        </div>
+                        
+                      </div>
+                      <div>
+                        <img id="weather_image" src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                          width="100px">
+                      </div>
+                    </div>
+        
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex flex-wrap justify-content-around text-center mb-4 pb-3 pt-2">
+                  <div class="flex-column bg-white p-5 mx-2  my-2" id="weather_next_days1">
+                    
+                  </div>
+                  <div class="flex-column bg-white p-5 mx-2 my-2" id="weather_next_days2">
+                    
+                  </div>
+                  <div class="flex-column bg-white p-5 mx-2 my-2" id="weather_next_days3">
+                    
+                  </div>
+                  <div class="flex-column bg-white p-5 mx-2 my-2" id="weather_next_days4">
+                    
+                  </div>
+                  <div class="flex-column bg-white p-5 mx-2 my-2" id="weather_next_days5">
+                    
+                  </div>
+            
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
